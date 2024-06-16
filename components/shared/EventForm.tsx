@@ -7,7 +7,7 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { Input } from "@/components/ui/input"
 import { eventFormSchema } from "@/lib/validator"
 import * as z from 'zod'
-import { eventDefaultValues } from "@/constants"
+import { eventDefaultValues } from "../../app/constants"
 import Dropdown from "./Dropdown"
 import { Textarea } from "@/components/ui/textarea"
 import { FileUploader } from "./FileUploader"
@@ -205,7 +205,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       <p className="ml-3 whitespace-nowrap text-grey-600">Start Date:</p>
                       <DatePicker 
                         selected={field.value} 
-                        onChange={(date: Date) => field.onChange(date)} 
+                        onChange={(date: Date | null) => field.onChange(date)}
                         showTimeSelect
                         timeInputLabel="Time:"
                         dateFormat="MM/dd/yyyy h:mm aa"
@@ -236,7 +236,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       <p className="ml-3 whitespace-nowrap text-grey-600">End Date:</p>
                       <DatePicker 
                         selected={field.value} 
-                        onChange={(date: Date) => field.onChange(date)} 
+                        onChange={(date: Date | null) => field.onChange(date)}
                         showTimeSelect
                         timeInputLabel="Time:"
                         dateFormat="MM/dd/yyyy h:mm aa"
