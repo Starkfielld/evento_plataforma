@@ -1,6 +1,6 @@
 'use client';
 
-import { headerLinks } from '../../app/constants'
+import { headerLinks } from '../../app/constants/index'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'

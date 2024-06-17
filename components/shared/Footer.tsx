@@ -14,7 +14,7 @@ const Footer = () => {
           />
         </Link>
 
-        <p>2024 Evently. Todos os direitos reservados para Paulo Roberto</p>
+        <p>2024 Evently. All Rights reserved by Paulo Roberto.</p>
       </div>
     </footer>
   )
