@@ -10,7 +10,8 @@ const nextConfig = {
         }
       ]
     }
-  }
+  };
   
-  module.exports = nextConfig
+  // Use a sintaxe ES Modules para exportar a configuração
+  export default nextConfig;
   
