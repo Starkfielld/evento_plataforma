@@ -14,6 +14,8 @@ O projeto "evento_plataforma" é uma aplicação para gestão de eventos. Ele pe
 Node.js (versão 14 ou superior)
 npm (versão 6 ou superior) ou yarn
 
+3. Instalação
+Clone o repositório para sua máquina local:
 git clone https://github.com/Starkfielld/evento_plataforma.git
 cd evento_plataforma
 
